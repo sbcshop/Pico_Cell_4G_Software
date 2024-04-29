@@ -65,14 +65,53 @@ Trekko Pico GPS Logger: Your ultimate companion for precise tracking and long-la
 - 13)TF card slot
 - 14)Battery Connector (JST_1x2P_2mm)
 
-### Interfacing Details
-- GPS module interfacing
-  
-  | Pico RP2040 | GPS L76 Module | Function |
-  |---|---|---|
-  |GP4 (TXD1) | RX | Serial UART connection |
-  |GP5 (RXD1) | TX  | Serial UART connection |
+-->
 
+
+<!--
+### Interfacing Details
+
+**Buzzer and Touch Control Interfacing Info**
+| Pico | Hardware Pin | Function                                    |
+|------|--------------|---------------------------------------------|
+| GP15 | PWM          | PWM output pin to control the buzzer        |
+| GP6  | I2C1 SDA     | I2C Data line for FT6236 touch controller   |
+| GP7  | I2C1 SCL     | I2C Clock line for FT6236 touch controller  |
+
+**SD Card interfacing info**
+| Pico | Hardware Pin | Function |
+|------|--------------|----------|
+| GP2  | SCK          | Clock pin of SPI interface for microSD card |
+| GP3  | MOSI         | MOSI (Master OUT Slave IN) data pin of SPI interface for microSD card |
+| GP4  | MISO         | MISO (Master IN Slave OUT) data pin of SPI interface for microSD card |
+| GP5  | CS           | Chip Select pin of SPI interface for microSD card |
+
+
+**Call Functionality Interfacing Info**
+| Pico | Hardware Pin | Function                              |
+|------|--------------|---------------------------------------|
+| GP0  | UART0 TX     | UART Transmit pin for EG25 communication |
+| GP1  | UART0 RX     | UART Receive pin for EG25 communication  |
+
+
+**Touch Display interfacing info**
+| Pico | Hardware Pin | Function |
+|------|--------------|----------|
+| GP10 | SCK          | Clock pin of SPI interface for ILI9341 display |
+| GP11 | MOSI         | MOSI (Master OUT Slave IN) data pin of SPI interface for ILI9341 display |
+| GP8  | DC           | Data/Command control pin for ILI9341 display |
+| GP9  | CS           | Chip Select pin for ILI9341 display |
+| GP13 | RST          | Reset pin for ILI9341 display |
+| GP6  | SDA          | Data line for I2C communication with FT6236 touch controller |
+| GP7  | SCL          | Clock line for I2C communication with FT6236 touch controller |
+
+- 4G module interfacing
+  
+  | Pico RP2040 | 4G Module | Function |
+  |---|---|---|
+  |GP0 (TXD0) | RX  | Serial UART connection |
+  |GP1 (RXD0) | TX  | Serial UART connection |
+  
 - SD Card interfacing : SPI0 of Pico is used for interfacing SDcard 
   | Pico RP2040 | SDCard | Function |
   |---|---|---|
@@ -117,7 +156,6 @@ or to download the latest firmware file from the official site, [visit here](htt
 - Drag and drop the MicroPython UF2 - ["Trekko_Firmware.uf2"](https://github.com/sbcshop/Trekko_Software/blob/main/Trekko_Firmware.uf2) file provided in this github onto the RPI-RP2 volume. Reference image shown below how to transfer any UF2 file or you can copy paste as well. Device will reboot and you are now running MicroPython on Trekko. 
   <img src= "https://github.com/sbcshop/PiCoder-Software/blob/main/images/firmware_installation.gif" />
 
-<!--
 ### 2. Onboard LED Blink 
    - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
    - Once done start **Thonny IDE application**, Connect PiBeam to laptop/PC.
@@ -158,25 +196,30 @@ or to download the latest firmware file from the official site, [visit here](htt
   * [3D Casing File]()
   * [L76K Module Datasheet]()
 
+-->
 
-## Related Products
-  * [GPS External Antenna](https://shop.sb-components.co.uk/products/gps-external-antenna?_pos=1&_sid=7f1c5cecc&_ss=r) 
-   
-     ![GPS_External_Antenna](https://shop.sb-components.co.uk/cdn/shop/products/GPSAntenna_2.jpg?v=1640588714&width=300)   
+## Related Products  
+  * [PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/products/pitalk-4g-iot-hat-1?_pos=4&_sid=815794148&_ss=r)
 
-  * [GPS HAT for Raspberry Pi](https://shop.sb-components.co.uk/products/gps-hat-for-raspberry-pi?_pos=6&_sid=7f1c5cecc&_ss=r) 
-   
-     ![gps-hat-for-raspberry-pi](https://shop.sb-components.co.uk/cdn/shop/products/GPSHATforRaspberryPi_5.png?v=1648553361&width=300) 
-
-  * [IoTFi 4G/2G : IoT Board based on RP2040](https://shop.sb-components.co.uk/products/iotfi-2g-4g-iot-board-based-on-rp2040?variant=40430002307155) 
-   
-     ![IoTFi 4G/2G : IoT Board based on RP2040](https://shop.sb-components.co.uk/cdn/shop/products/Untitled-2_1.png?v=1679651257&width=300)
+    ![PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/cdn/shop/products/06_2664295e-045b-48c3-bb02-f45ae2d7b4ea.png?v=1677660393&width=300)
     
-  * [UBlox GPS-RTK Breakout](https://shop.sb-components.co.uk/products/gps-rtk-hat-gps-rtk-hat-with-high-precision-rtk-gps-location-at-the-cm-level?_pos=3&_sid=7f1c5cecc&_ss=r) 
-   
-     ![UBlox GPS-RTK Breakout](https://shop.sb-components.co.uk/cdn/shop/products/03_32836ef3-a3d3-4039-bbd2-14d97fb53879.png?v=1675245485&width=300) 
+  * [PiTalk - 2G HAT](https://shop.sb-components.co.uk/products/pitalk-2g-hat?_pos=2&_sid=815794148&_ss=r)
 
- -->
+    ![PiTalk - 2G HAT](https://shop.sb-components.co.uk/cdn/shop/products/05_d481ca52-c552-4972-b4b6-d7199af0a3fc.png?v=1674819241&width=300)
+    
+  * [PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/products/pitalk-4g-iot-hat-1?_pos=4&_sid=815794148&_ss=r)
+
+    ![PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/cdn/shop/products/06_2664295e-045b-48c3-bb02-f45ae2d7b4ea.png?v=1677660393&width=300)
+
+  * [Simcom SIM7600G (4G) Breakout](https://shop.sb-components.co.uk/products/simcom-4g-module-breakout?_pos=1&_sid=5a6b2df96&_ss=r)
+
+    ![Simcom SIM7600G (4G) Breakout](https://shop.sb-components.co.uk/cdn/shop/files/2SIMCOM.png?v=1713788098&width=300)
+
+  * [Quectel EG25G (4G) Breakout](https://shop.sb-components.co.uk/products/quectel-4g-module-breakout?_pos=2&_sid=5a6b2df96&_ss=r)
+
+    ![Quectel EG25G (4G) Breakout](https://shop.sb-components.co.uk/cdn/shop/files/2quectel.png?v=1713789371&width=300)
+
+       
 ## Product License
 
 This is ***open source*** product. Kindly check LICENSE.md file for more information.

@@ -24,12 +24,11 @@ This Github provides a getting started guide and other working details for the P
 
 
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [PCB Step File]()
-  * [3D Casing File]()
-  * [Quectel EG25-G Module Datasheet]()
-  * [EG25-G Module Command Manual]()
+  * [Schematic](https://github.com/sbcshop/Pico_Cell_4G_Hardware/blob/main/Design%20Data/SCH%20PICO%20CELL.pdf)
+  * [Hardware Files](https://github.com/sbcshop/Pico_Cell_4G_Hardware)
+  * [3D Casing File](https://github.com/sbcshop/Pico_Cell_4G_Hardware/blob/main/Mechanical%20Data/3D%20Case%20Step%20Files.zip)
+  * [Quectel EG25-G Module Datasheet](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/documents/Quectel%20EG25-G%204G%20module%20datasheet.pdf)
+  * [EG25-G Module Command Manual](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/documents/Quectel_EC2xEG2xEG9xEM05_Series_QCFG_AT_Commands_Manual_V1.0.pdf)
 
 ## Related Products  
   * [PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/products/pitalk-4g-iot-hat-1?_pos=4&_sid=815794148&_ss=r)

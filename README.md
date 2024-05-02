@@ -20,7 +20,50 @@ This Github provides a getting started guide and other working details for the P
 - Speaker support is also available for attaching a speaker.
 - Indicator LEDs for Board supply, Module Power, Network, and Status, keeping you informed.
 
+## Getting Started with Pico Cell 4G 
+### 1. How to Install Boot Firmware in Pico
+
+- Mostly, Pico Cell 4G will be provided with firmware pre-installed, so you can skip this step if firmware is already present and directly jump start programming by following the below Step 2.
+- In this case, you want to add **MicroPython firmware** in device. First, you need to *Press and Hold* the **BOOT** button, and then, without releasing the button, connect it to PC/laptop using Type C cable. Check below image for reference,
+
+- Now your device is in boot mode, and you will see a new mass storage device named "RPI-RP2" as shown in the below figure.
+  <img src= "https://github.com/sbcshop/PiCoder-Software/blob/main/images/RPI_folder.jpg" width="720" height="360"/>
+
+- Download the MicroPython firmware file provided in this repo above as ["PicoCell4G_Firmware.uf2"](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/picocell4g_firmware.uf2)
+or to download the latest firmware file from the official site, [visit here](https://micropython.org/download/RPI_PICO/)     
+     
+- Drag and drop the MicroPython UF2 - ["PicoCell4G_Firmware.uf2"](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/picocell4g_firmware.uf2) file provided in this github onto the RPI-RP2 volume. Reference image shown below how to transfer any UF2 file or you can copy paste as well. Device will reboot and you are now running MicroPython on device. 
+  <img src= "https://github.com/sbcshop/PiCoder-Software/blob/main/images/firmware_installation.gif" />
+
+### 2. Onboard LED Blink 
+   - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
+   - Once done start **Thonny IDE application**, Connect Pico Cell 4G to laptop/PC.
+   - Select device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
+   - Write simple Python code or [Copy Demo Buzzer](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_Buzzer.py), then click on the green run button to make your script run on device. 
+     
+      <img src= "https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/boardSelect_thonny.jpg" />
+     
+     Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug Pico Cell 4G, it will stop running. To run your script without using an IDE, simply power up device and it should run your script, go to step 3.
+
+### 3. How to move your script on PiBeam
+   - Click on File -> Save Copy -> select Raspberry Pi Pico , Then save file as **main.py**
+     
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
+   
+      In similar way you can add various python code files to Pico Cell 4G. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples). 
+   
+   - But in case if you want to move multiple files at one go, example suppose you are interested to save library files folder, below image demonstrate that
+     
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/images/multiple_file_transfer.gif" />
+   - Here, we need to add [lib](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples/lib) and [fonts](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples/fonts) folder.
   
+### Example Codes
+   Save whatever example code file you want to try as **main.py** and make sure you have added [lib](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples/lib) and [fonts](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples/fonts) folder.
+   In [example](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples) folder you will find demo example script code to test onboard components of Pico Cell 4G like 
+   - [Display Demo](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_Display_Touch.py) : code to test touch display
+   - [SD card Demo](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_SDcard.py) : code to test micro SD card basic operations
+   - [4G Module Demo](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_Call_SMS_GPS.py) : This demonstrates Call, SMS and GPS features.
+   Using this sample code as a guide, you can modify, build, and share codes!! 
 
 
 ## Resources

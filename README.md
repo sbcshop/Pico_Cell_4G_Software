@@ -1,5 +1,7 @@
 # Pico_Cell_4G_Software
 
+<img src= "https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/picocellshopbanner.png" />
+
 This Github provides a getting started guide and other working details for the Pico Cell 4G.
 
 
@@ -19,6 +21,38 @@ This Github provides a getting started guide and other working details for the P
 - 3.5mm Audio Jack support to allow the use of headphones.
 - Speaker support is also available for attaching a speaker.
 - Indicator LEDs for Board supply, Module Power, Network, and Status, keeping you informed.
+
+### Hardware Overview
+#### Pinout
+
+<img src= "https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/pinoutpicocell4g.png" />
+
+- (1) 3.2” Touch Display
+- (2) Type C 4G module AT command
+- (3) NET_MODE LED
+- (4) NET_STATUS LED
+- (5) Network Light LED
+- (6) GPIOs Breakout
+- (7) Module Power Button
+- (8) Boot Button
+- (9) Type C RP2040 Programming
+- (10) Display FPC connector
+- (11) Buzzer
+- (12) Speaker 2.54” header 2 pin
+- (13) 3.5mm Audio Jack
+- (14) Micro SDcard slot
+- (15) Nano Sim slot
+- (16) Charging LED
+- (17) Battery Connector
+- (18) Quectel EG25-G Module
+- (19) Auxiliary Antenna uFL connector
+- (20) GPS Antenna uFL connector
+- (21) Main Antenna SMA connector
+- (22) Power LED
+
+
+### Interfacing Details
+
 
 ## Getting Started with Pico Cell 4G 
 ### 1. How to Install Boot Firmware in Pico

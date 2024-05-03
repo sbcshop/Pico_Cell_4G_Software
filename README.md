@@ -39,6 +39,50 @@ This Github provides a getting started guide and other working details for the P
 |(22) Power LED						           |									                |								                |
 
 ### Interfacing Details
+- Pico and 4G Module interfacing
+
+  | Pico       | 4G Module 	 	    | Function                |
+  |------------|------------------|-------------------------|
+  | GP0 (TXD0) | RXD    	        | UART Communication Pin 	|
+  | GP1 (RXD0) | TXD    	        | UART Communication Pin  |
+  | GP22  		 | PowerKey         | Module Power Key  			|	
+  | GP20  	   | Reset	          | Module Reset Pin 				|
+
+- Pico and Touch I2C interfacing
+  
+  | Pico | Touch Controller| Function 	     |
+  |------|-----------------|-----------------|
+  |GP6 	 | SDA 			       | Touch I2C  	   |
+  |GP7   | SCL  	 	       | Touch I2C  	   |
+  |GP13	 | RST   		       | Touch Reset  	 |
+  |GP14	 | IRQ  		       | Touch Intrrupt  |
+
+  
+- Pico and Display SPI interfacing
+  
+  | Pico | Display Pin | Function 											                     |
+  |------|-------------|-----------------------------------------------------|
+  |GP10  | SCLK  	     | Clock pin of SPI interface for display				       |
+  |GP11  | DIN   	     | MOSI (Master OUT Slave IN) data pin of SPI interface|
+  |GP8   | DC    	     | Data/Command pin of SPI interface					         |
+  |GP9   | CS    	     | Chip Select pin of SPI interface for display		     |
+  |GP13  | Reset       | Display Reset Pin 									                 |
+  |GP21  | BL    	     | Display backlight Pin 								               |
+  
+- Pico and micro SD card SPI interfacing
+
+  | Pico | microSD Card | Function 											                      |
+  |------|--------------|-----------------------------------------------------|
+  |GP2 	 | SCLK         | Clock pin of SPI interface for microSD card  		    |
+  |GP3   | DIN  		    | MOSI (Master OUT Slave IN) data pin of SPI interface|
+  |GP4   | DOUT 		    | MISO (Master IN Slave OUT) data pin of SPI interface|
+  |GP5   | CS   		    | Chip Select pin of SPI interface for SDcard		      |
+ 
+- Buzzer Interfacing with Pico
+  | Pico  | Buzzer 	| Function 		    |
+  |-------|---------|-----------------|
+  | GP15  | +Ve Pin | PWM control pin |
+
 
 
 ## Getting Started with Pico Cell 4G 
@@ -98,23 +142,19 @@ or to download the latest firmware file from the official site, [visit here](htt
 ## Related Products  
   * [PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/products/pitalk-4g-iot-hat-1?_pos=4&_sid=815794148&_ss=r)
 
-    ![PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/cdn/shop/products/06_2664295e-045b-48c3-bb02-f45ae2d7b4ea.png?v=1677660393&width=300)
+    ![PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/cdn/shop/products/06_2664295e-045b-48c3-bb02-f45ae2d7b4ea.png?v=1677660393&width=150)
     
   * [PiTalk - 2G HAT](https://shop.sb-components.co.uk/products/pitalk-2g-hat?_pos=2&_sid=815794148&_ss=r)
 
-    ![PiTalk - 2G HAT](https://shop.sb-components.co.uk/cdn/shop/products/05_d481ca52-c552-4972-b4b6-d7199af0a3fc.png?v=1674819241&width=300)
-    
-  * [PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/products/pitalk-4g-iot-hat-1?_pos=4&_sid=815794148&_ss=r)
-
-    ![PiTalk - 4G IoT HAT](https://shop.sb-components.co.uk/cdn/shop/products/06_2664295e-045b-48c3-bb02-f45ae2d7b4ea.png?v=1677660393&width=300)
+    ![PiTalk - 2G HAT](https://shop.sb-components.co.uk/cdn/shop/products/05_d481ca52-c552-4972-b4b6-d7199af0a3fc.png?v=1674819241&width=150)
 
   * [Simcom SIM7600G (4G) Breakout](https://shop.sb-components.co.uk/products/simcom-4g-module-breakout?_pos=1&_sid=5a6b2df96&_ss=r)
 
-    ![Simcom SIM7600G (4G) Breakout](https://shop.sb-components.co.uk/cdn/shop/files/2SIMCOM.png?v=1713788098&width=300)
+    ![Simcom SIM7600G (4G) Breakout](https://shop.sb-components.co.uk/cdn/shop/files/2SIMCOM.png?v=1713788098&width=150)
 
   * [Quectel EG25G (4G) Breakout](https://shop.sb-components.co.uk/products/quectel-4g-module-breakout?_pos=2&_sid=5a6b2df96&_ss=r)
 
-    ![Quectel EG25G (4G) Breakout](https://shop.sb-components.co.uk/cdn/shop/files/2quectel.png?v=1713789371&width=300)
+    ![Quectel EG25G (4G) Breakout](https://shop.sb-components.co.uk/cdn/shop/files/2quectel.png?v=1713789371&width=150)
 
        
 ## Product License

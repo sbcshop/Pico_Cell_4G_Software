@@ -1,0 +1,1 @@
+Save whatever example code file you want to try as **main.py** and make sure you have added [lib](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples/lib) and [fonts](https://github.com/sbcshop/Pico_Cell_4G_Software/tree/main/examples/fonts) folder.

@@ -1,3 +1,4 @@
+''' Demo Read/Write operation code to onboard microSD card'''
 import sdcard
 import os
 from machine import UART,SPI,Pin, PWM,I2C
@@ -6,9 +7,9 @@ from utime import sleep
 
 #define and configure SPI interfacing of sdcard with Pico
 spi=SPI(0,sck=Pin(2),mosi=Pin(3),miso=Pin(4))
-sd=sdcard.SDCard(spi,Pin(5))
 
 def sdtest(data):
+    sd=sdcard.SDCard(spi,Pin(5))  # pass spi, CS 
     vfs = os.VfsFat(sd)
     print(vfs)
     os.mount(vfs, "/fc")
@@ -28,13 +29,11 @@ def sdtest(data):
 
     os.umount("/fc")
 
-text = input("Enter text to save in SDcard: ")
-sdtest(text)
-
-
-
-
-
-
-
+while True:
+    try:
+        text = input("Enter text to save in SDcard: ")
+        sdtest(text)
+    
+    except OSError as e:
+         print("OS error: ", e)
 

@@ -27,29 +27,16 @@ This Github provides a getting started guide and other working details for the P
 
 <img src= "https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/pinoutpicocell4g.png" />
 
-- (1) 3.2” Touch Display
-- (2) Type C 4G module AT command
-- (3) NET_MODE LED
-- (4) NET_STATUS LED
-- (5) Network Light LED
-- (6) GPIOs Breakout
-- (7) Module Power Button
-- (8) Boot Button
-- (9) Type C RP2040 Programming
-- (10) Display FPC connector
-- (11) Buzzer
-- (12) Speaker 2.54” header 2 pin
-- (13) 3.5mm Audio Jack
-- (14) Micro SDcard slot
-- (15) Nano Sim slot
-- (16) Charging LED
-- (17) Battery Connector
-- (18) Quectel EG25-G Module
-- (19) Auxiliary Antenna uFL connector
-- (20) GPS Antenna uFL connector
-- (21) Main Antenna SMA connector
-- (22) Power LED
-
+|									                   |									                |								                |
+|------------------------------------|----------------------------------|-------------------------------|
+|(1) 3.2” Touch Display				       |(2) Type C 4G module AT command	  |(3) NET_MODE LED				        |
+|(4) NET_STATUS LED					         |(5) Network Light LED				      |(6) GPIOs Breakout				      |
+|(7) Module Power Button			       |(8) Boot Button					          |(9) Type C RP2040 Programming	|
+|(10) Display FPC connector			     |(11) Buzzer						            |(12) Speaker 2.54” header 2 pin|	
+|(13) 3.5mm Audio Jack				       |(14) Micro SDcard slot			      |(15) Nano Sim slot				      |
+|(16) Charging LED					         |(17) Battery Connector			      |(18) Quectel EG25-G Module		  |
+|(19) Auxiliary Antenna uFL connector|(20) GPS Antenna uFL connector	  |(21) Main Antenna SMA connector|
+|(22) Power LED						           |									                |								                |
 
 ### Interfacing Details
 
@@ -79,7 +66,7 @@ or to download the latest firmware file from the official site, [visit here](htt
      
      Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug Pico Cell 4G, it will stop running. To run your script without using an IDE, simply power up device and it should run your script, go to step 3.
 
-### 3. How to move your script on PiBeam
+### 3. How to move your script on Pico of Device
    - Click on File -> Save Copy -> select Raspberry Pi Pico , Then save file as **main.py**
      
       <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
@@ -97,6 +84,7 @@ or to download the latest firmware file from the official site, [visit here](htt
    - [Display Demo](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_Display_Touch.py) : code to test touch display
    - [SD card Demo](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_SDcard.py) : code to test micro SD card basic operations
    - [4G Module Demo](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/examples/Demo_Call_SMS_GPS.py) : This demonstrates Call, SMS and GPS features.
+   
    Using this sample code as a guide, you can modify, build, and share codes!! 
 
 

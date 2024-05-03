@@ -1,5 +1,13 @@
-'''Demo code to Test Call, SMS and GPS features of Pico Cell 4G'''
+'''Demo code to Test Call, SMS and GPS features of Pico Cell 4G
 
+  | Pico       | 4G Module 	 	    | Function                |
+  |------------|--------------------|-------------------------|
+  | GP0 (TXD0) | RXD    	        | UART Communication Pin  |
+  | GP1 (RXD0) | TXD    	        | UART Communication Pin  |
+  | GP22  	   | PowerKey           | Module Power Key  	  |	
+  | GP20  	   | Reset	            | Module Reset Pin 		  |
+  
+'''
 from eg25 import EG25
 import time,utime
 from time import sleep

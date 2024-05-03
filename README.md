@@ -83,7 +83,20 @@ This Github provides a getting started guide and other working details for the P
   |-------|---------|-----------------|
   | GP15  | +Ve Pin | PWM control pin |
 
-
+- GPIOs Breakout
+  
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/GPIOs_breakout_pins.png" />
+  
+  | Pico |Function                     |
+  |------|-----------------------------|
+  |GP27  | GPIO/ADC1/SCL1/PWM5B        |
+  |GP26  | GPIO/ADC0/SDA1/PWM5A        |
+  |GP18  | GPIO/SDA1/SCLK0/PWM1A 	     |
+  |GP17  | GPIO/SCL0/CS0/RXD0/PWM0B    |
+  |GP16  | GPIO/SDA0/MISO0/TXD0/PWM0A  |
+  |VCC   | USB_5V/Battery_IN           | 
+  |3.3V  | Positive 3.3V supply        |
+  |GND   | Supply ground pin 	         |
 
 ## Getting Started with Pico Cell 4G 
 ### 1. How to Install Boot Firmware in Pico

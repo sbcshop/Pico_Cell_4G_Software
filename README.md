@@ -157,32 +157,8 @@ or to download the latest firmware file from the official site, [visit here](htt
   
   <img src="https://github.com/sbcshop/PiTalk_4G_Dongle_Software/raw/main/images/Scr7.png" />
 
-### For AT Commands Testing
-- Open XCTU software and select the Serial console option to run as shown below.
+- Visit the Link to checkout [**AT COMMAND Testing procedure**](https://github.com/sbcshop/Quectel_EG25-G_Module_Breakout_Software/blob/main/README.md#for-at-commands-testing).
 
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img1_xctu.jpg" width="519" height="456"/>
-
-- Select Configure option and then suitable AT COM port. Change Baud Rate and other details only if needed, for the 4G module we will keep default settings. Select OK and After that just Close the connection to start.
-
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img2_xctu.jpg" width="519" height="456" />
-
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img3_xctu.jpg" width="519" height="456" />
-
-- Now the 4G module is ready to accept AT commands for testing. Either you can send commands through console log or create packets to send AT commands.
-  
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img4_xctu.jpg" width="519" height="456" />
-
-  * AT
-  * AT+CPIN?
-  You can refer to the [manual](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/documents/Quectel_EC2xEG2xEG9xEM05_Series_QCFG_AT_Commands_Manual_V1.0.pdf) for more such AT Commands
-
-- Creating packets is a good option for multiple commands testing. Don’t forget to add 0D and 0A required for carriage return and enter.
-  
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img5_xctu.jpg" width="519" height="456" />
-  
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img6_xctu.jpg" width="519" height="456" />
-
-  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img7_xctu.png" width="519" height="456" /> 
 
 ## Resources
   * [Schematic](https://github.com/sbcshop/Pico_Cell_4G_Hardware/blob/main/Design%20Data/SCH%20PICO%20CELL.pdf)

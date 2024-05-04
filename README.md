@@ -102,7 +102,7 @@ This Github provides a getting started guide and other working details for the P
 ### 1. How to Install Boot Firmware in Pico
 
 - Mostly, Pico Cell 4G will be provided with firmware pre-installed, so you can skip this step if firmware is already present and directly jump start programming by following the below Step 2.
-- In this case, you want to add **MicroPython firmware** in device. First, you need to *Press and Hold* the **BOOT** button, and then, without releasing the button, connect it to PC/laptop using Type C cable. Check below image for reference,
+- In this case, you want to add **MicroPython firmware** in device. First, you need to *Press and Hold* the **BOOT** button, and then, without releasing the button, connect it to PC/laptop using Type C cable. You have to use **RP2040 USB** for firmware and coding purpose.
 
 - Now your device is in boot mode, and you will see a new mass storage device named "RPI-RP2" as shown in the below figure.
   <img src= "https://github.com/sbcshop/PiCoder-Software/blob/main/images/RPI_folder.jpg" width="720" height="360"/>
@@ -144,6 +144,45 @@ or to download the latest firmware file from the official site, [visit here](htt
    
    Using this sample code as a guide, you can modify, build, and share codes!! 
 
+## Setup to use 4G Module 
+- You can use the Quectel EG25-G standalone to connect to the internet and test various functionalities by sending AT instructions. Simply connect Pico Cell 4G to PC/laptop via 4G USB Type C. 
+
+- Now press, hold Power Key button and release after 3-4 seconds to activate module. LEDs associated with the network will light up, first NET_STATUS then NET_MODE will be on and finally NetLight LED starts blinking. This confirms module ready for use.
+  
+- To verify open device Manager and check if below listing you can see into COM port. If you cannot see device then driver is missing, download and install driver from [here](https://github.com/sbcshop/PiTalk_4G_Dongle_Software/blob/main/Quectel_LTE_EG25-G_Windows_USB_Driver_V2.1.7.rar)
+
+   <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/device_manager_4Gmodule.jpg" width="614" height="460" />
+   
+- If everything goes well it will connect as a cellular network in your system as shown below. After the succesfull 4G Module connection you will able to use your cellular network to connect with internet.
+  
+  <img src="https://github.com/sbcshop/PiTalk_4G_Dongle_Software/raw/main/images/Scr7.png" />
+
+### For AT Commands Testing
+- Open XCTU software and select the Serial console option to run as shown below.
+
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img1_xctu.jpg" width="519" height="456"/>
+
+- Select Configure option and then suitable AT COM port. Change Baud Rate and other details only if needed, for the 4G module we will keep default settings. Select OK and After that just Close the connection to start.
+
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img2_xctu.jpg" width="519" height="456" />
+
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img3_xctu.jpg" width="519" height="456" />
+
+- Now the 4G module is ready to accept AT commands for testing. Either you can send commands through console log or create packets to send AT commands.
+  
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img4_xctu.jpg" width="519" height="456" />
+
+  * AT
+  * AT+CPIN?
+  You can refer to the [manual](https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/documents/Quectel_EC2xEG2xEG9xEM05_Series_QCFG_AT_Commands_Manual_V1.0.pdf) for more such AT Commands
+
+- Creating packets is a good option for multiple commands testing. Don’t forget to add 0D and 0A required for carriage return and enter.
+  
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img5_xctu.jpg" width="519" height="456" />
+  
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img6_xctu.jpg" width="519" height="456" />
+
+  <img src="https://github.com/sbcshop/Pico_Cell_4G_Software/blob/main/images/img7_xctu.png" width="519" height="456" /> 
 
 ## Resources
   * [Schematic](https://github.com/sbcshop/Pico_Cell_4G_Hardware/blob/main/Design%20Data/SCH%20PICO%20CELL.pdf)
